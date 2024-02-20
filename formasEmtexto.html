@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formas em texto</title>
+    <style>
+        #quadrado{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: lightcoral;
+            shape-outside: inset(20px 5px 30px 10px); /*10px na parte superior
+                                                       5px a direita 30px na parte inferior
+                                                       10px a esquerda*/
+        }
+        .circulo{
+            float: left;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            shape-outside: circle();
+            clip-path: circle();
+
+        }
+        #ellipse{
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            shape-outside: ellipse(20% 50%);
+            background: black;
+        }
+
+    </style>
+    </head>
+    <body>
+    <h1>shape-outside</h1>
+    <p>essa propriedade permite que voce defina uma forma para que o texto se envolva
+        e flua ao seu redor
+    </p>
+    <p>junto a esta propriedade temos algumas formas basicas</p>
+    <p>o elemento que vamos aplicar a forma com propriedade <strong>float</strong></p>
+    <ul>
+        <li>insert()</li>
+        <li>circle()</li>
+        <li>ellipse()</li>
+        <li>polygon</li>
+    </ul>
+    <h2>insert()</h2>
+    <p>pode ser usado para criar um retangulo/quadrado com um deslocamento opcional 
+        para o texto que o envolver
+    </p>
+    <div id="quadrado"></div>
+    Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.
+     Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris 
+     se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+     Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.
+     Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris 
+     se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+     Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.
+     Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris 
+     se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+    
+     <h2>circle()</h2>
+     <p>o circulo e criado usando a propriedade<strong>shape-outside</strong></p>
+     <p>pode ser aplicado um <strong> clip-path</strong>pode receber a mesma propriedade
+        <strong> shape-outside</strong> para dar a ela a forma padrao de <strong>circle()</strong></p>
+        
+        <div class="circulo"></div>
+        Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.
+     Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris 
+     se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+     Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.
+     Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris 
+     se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+     Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.
+     Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris 
+     se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+
+     <hr>
+     <h2>ellipse()</h2>
+     <div id="ellipse"></div>
+     Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.
+     Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris 
+     se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+     Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.
+     Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris 
+     se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+     Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.
+     Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris 
+     se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+
+
+</body>
+</html>
