@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slider Automático</title>
+<link rel="stylesheet" href="./cabecalho-curso.css">
+
+<style>
+  .slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  
+  /* botões de navegação */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: black;
+    color: white;
+    z-index: 2;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+</style>
+</head>
+<body>
+
+<div>
+    <img src="img/1.jpg" alt=""class="meuslide">
+    <img src="img/2.jpg" alt=""class="meuslide">
+    <img src="img/3.jpg" alt=""class="meuslide">
+</div>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let slides = document.querySelectorAll('.slide');
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = 'block';
+    setTimeout(showSlides, 2000); // Troca o slide a cada 2 segundos (2000 milissegundos)
+  }
+</script>
+
+</body>
+</html>
