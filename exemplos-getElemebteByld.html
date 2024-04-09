@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById</title>
+</head>
+<body>
+    <h1>Excluir elemento</h1>
+    <button onclick="excluir()">excluir</button>
+    <button onclick="aparecer()">aparecer</button>
+    <div id="outraImagem">
+        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/08/tse-carlos-andrade-lima-170001609174.jpg?w=161" alt="" id="imagem">
+    </div>
+
+    <h1>Modificar o conteudo de um elemento</h1>
+    <div id="meuelemento">Conteúdo inicial</div>
+    <button onclick="modificar()">Mudar</button>
+    <hr>
+    <h1>Alterar o estilo do elemento</h1>
+    <div id="cor">Texto colorido</div>
+    <button onclick="colorir()">Colorir</button>
+    <hr>
+    <h1>Alterar elemento</h1>
+    <input id="texto" type="text" value="texto inicial">
+    <button onclick="pega()">Pegar texto</button>
+    <hr>
+    <h1>Esconder elemento</h1>
+    <div id="esconder">Texto para esconder</div>
+    <button onclick="escondertexto()">Esconder</button>
+    <button onclick="aparecerelemento()">Aparecer</button>
+</body>
+<script>
+    function excluir(){
+        elemento = document.getElementById("imagem")
+        elemento.parentNode.removeChild(elemento)
+    }
+    function aparecer(){
+        elemento = document.getElementById("imagem");
+        const newImg = document.createElement("img");
+        container = document.getElementById('outraImagem')
+        newImg.src = "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/08/tse-carlos-andrade-lima-170001609174.jpg?w=161"
+        container.appendChild(newImg);
+
+    }
+
+
+    function modificar(){
+        var elemento = document.getElementById("meuelemento");
+        console.log(elemento)
+        elemento.innerHTML="Ola rapaiz e raposos";
+    }
+    function colorir(){
+        var elemento = document.getElementById("cor");
+        elemento.style.fontSize='150px';
+        elemento.style.color="red";
+        elemento.style.fontHeight="bold";
+        }
+       // function pega(){
+           // var input = document.getElementById("texto");
+           // var valor = input.value;
+           // console.log(valor);
+           // var conteudo = conteudo.innerHTML=valor;
+                   // }
+                   function escondertexto(){
+                    var elemento = document.getElementById("esconder");
+                    elemento.style.display = "none";                
+                    }
+                    function aparecerelemento(){
+                    var elemento = document.getElementById("esconder");
+                    elemento.style.display = "inline";                
+                    }
+</script>
+</html>

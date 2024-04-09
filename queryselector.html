@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>O método queryselector()</h1>
+
+    <p class="exemplo">Eu sou um paragrafo</p>
+    <p class="exemplo">Eu sou um paragrafo</p>
+    <p class="exemplo">Eu sou um paragrafo</p>
+    <p class="exemplo">Eu sou um paragrafo</p>
+    <p class="exemplo">Eu sou um paragrafo</p>
+    <p class="exemplo">Eu sou um paragrafo</p>
+    <p class="exemplo">Eu sou um paragrafo</p>
+    <div class="nome">Meu nome</div>
+
+    <script>
+        document.querySelectorAll('.exemplo')[0].style.backgroundColor = 'red'
+        document.querySelectorAll('.exemplo')[1].style.backgroundColor = 'yellow'
+        document.querySelectorAll('.exemplo')[2].style.backgroundColor = 'red'
+        document.querySelectorAll('.exemplo')[3].style.backgroundColor = 'purple'
+        document.querySelectorAll('.exemplo')[4].style.backgroundColor = 'blue'
+        document.querySelectorAll('.exemplo')[5].style.backgroundColor = 'brown'
+        document.querySelectorAll('.exemplo')[6].style.backgroundColor = 'green'
+        document.querySelectorAll('.exemplo')[7].style.backgroundColor = 'cyon'
+
+        const lista = document.querySelectorAll(".example")
+        for (let i = 0; 1 <lista.length ; i++){
+            lista[1].style.backgroundColor = "yellow"
+        }
+
+        document.querySelectorAll(".exemplo")[5].style.backgroundColor = "pink"
+        
+    </script>
+    
+</body>
+</html>
